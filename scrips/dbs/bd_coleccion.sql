@@ -1,3 +1,5 @@
+
+
 create database coleccion;
 
 create table peliculas(
