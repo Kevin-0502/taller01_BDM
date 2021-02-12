@@ -43,7 +43,7 @@ create table evaluacion(
 
 alter table evaluacion add pimary key(codpeli, iddirector);
 alter table evaluacion add constraint fk_evaluacionpelicula foreign key (codpeli) references peliculas(codpeli);
-alter table evaluacion add constraint fk_evaluaciondirector foreign key (iddirector) references director(iddirector);
+alter table evaluacion add constraint fk_evaluaciondirector foreign key (iddirector) references director(idirector);
 
 insert into evaluacion () values ('P0001','D0007',null);
 insert into evaluacion () values ('P0002','D0001',3.50);
