@@ -1,5 +1,4 @@
-
-select nombre as 'Películas' from peliculas;	
+select nombre as 'Películas' from peliculas;
 
 select idirector as 'Id de Director', nombre as 'Director' from director; 
 
