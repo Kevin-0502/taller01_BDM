@@ -18,5 +18,8 @@ select p.nombre as 'Peliculas de Steve Martino y Francis Lawrence' from pelicula
 
 select (e.calificacion+0.10) as 'Puntuaciones aumentadas en 0.10' from evaluacion e;
 
+update director set nombre='Samuel L. Jackson' where nombre='Samuel Jackson';
 
+update director set nombre='David O. Russell' where nombre='David Russell';
 
+delete * from evaluacion where iddirector=(select idirector from director where nombre='Adam Mckay');
